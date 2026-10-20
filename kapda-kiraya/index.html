@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kapda Kiraya — Apne Kapde Kiraye Par Do</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="logo">
+    <img src="00-000.png" alt="Kapda Kiraya Logo" class="logo-img">
+    <span>Kapda <em>Kiraya</em></span>
+  </div>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <button class="nv act" data-v="browse">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      Browse Karo
+    </button>
+    <button class="nv" data-v="upload">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      Upload Karo
+    </button>
+    <button class="nv" data-v="mine">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Meri Kiraya
+    </button>
+  </nav>
+  <div class="header-actions">
+    <button class="theme-toggle" id="themeBtn" aria-label="Theme toggle" title="Dark/Light mode">
+      <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" hidden><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="btn" data-v="upload">+ Kapda Daalo</button>
+  </div>
+</header>
+
+<main>
+<!-- ─── BROWSE VIEW ──────────────────────────────────── -->
+<section class="view" id="v-browse">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">🇮🇳 India's #1 Kapda Sharing Platform</div>
+        <h1>Wardrobe <em>share</em> karo,<br>naye look <em>bina kharche</em> ke.</h1>
+        <p>Apne ache kapde list kariye aur unse kamaiye, ya kisi aur ke collection se ek dum fresh outfit kiraye par lijiye — shaadi ho ya party.</p>
+        <div class="cta">
+          <button class="btn btn-hero" id="goc">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            Collection Dekho
+          </button>
+          <button class="btn line" data-v="upload">Apna Kapda List Karo →</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b id="stat-items">6+</b><span>Kapde Listed</span></div>
+          <div class="stat"><b>₹199</b><span>Se Shuru Kiraya</span></div>
+          <div class="stat"><b>5</b><span>Sheher Active</span></div>
+        </div>
+      </div>
+      <div class="tags" aria-hidden="true">
+        <div class="tag t1"><b>Banarasi Silk Saree</b>₹499 / din</div>
+        <div class="tag t2"><b>Sherwani — Ivory</b>₹899 / din</div>
+        <div class="tag t3"><b>Party Gown</b>₹349 / din</div>
+        <div class="tag-badge">🌟 4.8★ Rating</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="wrap">
+    <div class="how-section">
+      <h2 class="section-label">Kaise Kaam Karta Hai</h2>
+      <div class="how">
+        <div class="how-card">
+          <div class="how-icon">🛍️</div>
+          <b>Customer: kiraye par lo</b>
+          <span class="mu">Kapda chuno, tarikh daalo, booking confirm karo. Deposit wapas milta hai.</span>
+        </div>
+        <div class="how-card">
+          <div class="how-icon">🏪</div>
+          <b>Retailer: dukaan ka stock chalao</b>
+          <span class="mu">Apne collection ko list karo aur har din ki kamai pao.</span>
+        </div>
+        <div class="how-card">
+          <div class="how-icon">💰</div>
+          <b>Individual: wardrobe se kamaao</b>
+          <span class="mu">Ek baar pehne kapde alamari mein mat rakho, kiraye par do.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collection -->
+    <div class="sec" id="collection">
+      <div class="bar">
+        <div>
+          <h2>Collection Browse Karo</h2>
+          <span class="mu" id="cnt"></span>
+        </div>
+        <div class="view-toggle">
+          <button class="vt-btn act" id="gridViewBtn" aria-label="Grid view" title="Grid view">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+          </button>
+          <button class="vt-btn" id="listViewBtn" aria-label="List view" title="List view">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="filters">
+        <div class="search-wrap">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input id="q" placeholder="Naam se dhoondho... (e.g. saree, kurta)" aria-label="Search kapde">
+        </div>
+        <select id="fc" aria-label="Category filter"></select>
+        <select id="fz" aria-label="Size filter"></select>
+        <select id="fsort" aria-label="Sort by">
+          <option value="">Sort By</option>
+          <option value="low">Kiraya: Kam Se Zyada</option>
+          <option value="high">Kiraya: Zyada Se Kam</option>
+          <option value="new">Naye Pehle</option>
+        </select>
+      </div>
+
+      <div id="active-filters" class="active-filters"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── UPLOAD VIEW ──────────────────────────────────── -->
+<section class="view wrap" id="v-upload" hidden>
+  <div class="page-header">
+    <button class="back-btn" data-v="browse">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div>
+      <h2>Kapda Upload Karo</h2>
+      <p class="mu">Details bharo, aapka kapda turant collection mein dikhega.</p>
+    </div>
+  </div>
+
+  <div class="upload-layout">
+    <div class="form">
+      <div class="form-group">
+        <label for="un">Kapde ka naam <span class="req">*</span></label>
+        <input id="un" placeholder="e.g. Silk Saree — Royal Blue" maxlength="80">
+        <span class="field-hint">Achha naam → zyada bookings</span>
+      </div>
+
+      <div class="two">
+        <div class="form-group">
+          <label for="ucat">Category <span class="req">*</span></label>
+          <select id="ucat"></select>
+        </div>
+        <div class="form-group">
+          <label for="usz">Size <span class="req">*</span></label>
+          <select id="usz"></select>
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="form-group">
+          <label for="up">Kiraya (₹ per din) <span class="req">*</span></label>
+          <div class="input-prefix">
+            <span>₹</span>
+            <input id="up" type="number" min="1" max="99999" inputmode="numeric" placeholder="0">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="uc">Sheher <span class="req">*</span></label>
+          <input id="uc" placeholder="e.g. Lucknow, Delhi">
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="form-group">
+          <label for="ul">Aapka naam / Dukaan ka naam <span class="req">*</span></label>
+          <input id="ul" placeholder="e.g. Priya S.">
+        </div>
+        <div class="form-group">
+          <label for="ut">Main hoon</label>
+          <select id="ut">
+            <option>Individual</option>
+            <option>Retailer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Photo (optional)</label>
+        <div class="file-drop" id="fileDrop">
+          <div class="file-drop-inner" id="fileDropInner">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <p>Photo yahan drag karo ya <label for="uf" class="file-link">click karke chuniye</label></p>
+            <span class="mu">JPG, PNG • Max 5MB</span>
+          </div>
+          <input id="uf" type="file" accept="image/*" style="display:none">
+          <img id="pv" alt="Preview" hidden>
+          <button type="button" class="remove-photo" id="removePhoto" hidden>✕ Photo Hatao</button>
+        </div>
+      </div>
+
+      <div class="upload-terms">
+        <label class="checkbox-label">
+          <input type="checkbox" id="agree">
+          <span>Mujhe samajh aa gaya ki yeh listing public hogi aur kapda original condition mein hona chahiye.</span>
+        </label>
+      </div>
+
+      <div class="acts" style="justify-content:flex-start;margin-top:20px">
+        <button class="btn" id="ub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          Kapda List Karo
+        </button>
+        <button class="btn line" data-v="browse">Cancel</button>
+      </div>
+    </div>
+
+    <div class="upload-tips">
+      <div class="tips-card">
+        <h3>📸 Achhi Listing ke Tips</h3>
+        <ul>
+          <li>Achhi roshni mein photo lo</li>
+          <li>Kapda clean aur press kiya hua dikhao</li>
+          <li>Accurate size likho</li>
+          <li>Realistic price rakho</li>
+          <li>Apna naam clearly likho</li>
+        </ul>
+      </div>
+      <div class="tips-card">
+        <h3>💡 Kya expect karein?</h3>
+        <ul>
+          <li>Listing turant dikhne lagegi</li>
+          <li>Customer booking request karenga</li>
+          <li>Deposit security ke liye hota hai</li>
+          <li>Kapda wapas milne ke baad deposit return</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MY RENTALS VIEW ──────────────────────────────── -->
+<section class="view wrap" id="v-mine" hidden>
+  <div class="page-header" style="margin-bottom:8px">
+    <button class="back-btn" data-v="browse">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div>
+      <h2>Meri Kirayadari</h2>
+      <p class="mu">Sab kuch ek jagah</p>
+    </div>
+  </div>
+
+  <div class="mine-tabs">
+    <button class="mine-tab act" data-tab="rentals">Kiraye par liye <span class="tab-badge" id="rentals-badge">0</span></button>
+    <button class="mine-tab" data-tab="listings">Meri Listings <span class="tab-badge" id="listings-badge">0</span></button>
+  </div>
+
+  <div id="tab-rentals">
+    <div id="myr"></div>
+  </div>
+  <div id="tab-listings" hidden>
+    <div id="myl"></div>
+  </div>
+</section>
+
+<!-- ─── TRACKING VIEW ─────────────────────────────────── -->
+<section class="view wrap" id="v-track" hidden>
+  <div class="page-header">
+    <button class="back-btn" data-v="mine">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div>
+      <h2>Rental Track Karo</h2>
+      <p class="mu" id="track-subtitle">Aapke kapde ki status</p>
+    </div>
+  </div>
+  <div id="track-body"></div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-inner wrap">
+    <div class="footer-brand">
+      <div class="logo-icon sm">👗</div>
+      <span><b>Kapda Kiraya</b></span>
+    </div>
+    <p class="mu">India ka apna kapda sharing platform</p>
+    <p class="mu" style="margin-top:4px">Founder: <b>Priyanshu Gupta</b> · Co-Founder: <b>Seema Anshu</b></p>
+  </div>
+</footer>
+
+<!-- Rent Dialog -->
+<dialog id="dlg" aria-modal="true">
+  <div id="dbody"></div>
+</dialog>
+
+<!-- Toast -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- Mobile Bottom Nav -->
+<nav class="bottom-nav" aria-label="Mobile navigation">
+  <button class="bn act" data-v="browse">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+    <span>Browse</span>
+  </button>
+  <button class="bn" data-v="upload">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+    <span>Upload</span>
+  </button>
+  <button class="bn" data-v="mine">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    <span>Meri Kiraya</span>
+  </button>
+</nav>
+
+<script src="js/app.js"></script>
+</body>
+</html>
